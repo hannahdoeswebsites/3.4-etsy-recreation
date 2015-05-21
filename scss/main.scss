@@ -1,0 +1,38 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+h1 {
+  font-size: 12px;
+}
+
+body {
+  @include outer-container(1600px);
+  @include span-columns (12);
+  background-color: yellow;
+
+}
+
+header {
+  background-color: white;
+  height: 75px;
+}
+
+nav {
+  @include span-columns (2);
+  @include shift(2);
+  float: left;
+  background-color: white;
+
+}
+
+ul {
+  @include span-columns (7);
+  float: left;
+}
+
+ul li {
+  @include span-columns (3.3);
+  height: 200px;
+  background-color: blue;
+  margin-bottom: 10px;
+}
