@@ -6,9 +6,6 @@ html {
 *::before {
   box-sizing: inherit; }
 
-h1 {
-  font-size: 12px; }
-
 body {
   max-width: 1600px;
   margin-left: auto;
@@ -26,8 +23,37 @@ body {
     margin-right: 0; }
 
 header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
   background-color: white;
+  vertical-align: middle;
   height: 75px; }
+  header:last-child {
+    margin-right: 0; }
+
+#headerimage {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  margin-left: 17.05961%;
+  background-image: url("http://www.etsy.com/images/logo_no_border.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  height: 50px;
+  margin-top: 15px;
+  width: 100px; }
+  #headerimage:last-child {
+    margin-right: 0; }
+
+#search {
+  margin-left: 23.03047%;
+  margin-top: 30px; }
+  #search text {
+    height: 20px; }
 
 nav {
   float: left;
@@ -49,13 +75,28 @@ ul {
   ul:last-child {
     margin-right: 0; }
 
-ul li {
+li {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 25.7907%;
-  height: 200px;
+  width: 28.17905%;
+  height: 300px;
   background-color: blue;
-  margin-bottom: 10px; }
-  ul li:last-child {
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  li:last-child {
     margin-right: 0; }
+
+h1 {
+  text-align: left;
+  overflow: hidden;
+  font-size: 10px;
+  white-space: nowrap;
+  height: 10px;
+  max-width: 230px; }
+
+li img {
+  height: 180px;
+  width: 220px; }

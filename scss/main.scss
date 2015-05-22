@@ -1,9 +1,6 @@
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
-h1 {
-  font-size: 12px;
-}
 
 body {
   @include outer-container(1600px);
@@ -13,8 +10,35 @@ body {
 }
 
 header {
+  @include span-columns(12);
   background-color: white;
-  height: 75px;
+  vertical-align: middle;
+ height: 75px;
+
+
+}
+
+#headerimage {
+  @include span-columns(2);
+  @include shift (2);
+  background-image: url('http://www.etsy.com/images/logo_no_border.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  height: 50px;
+margin-top: 15px;
+width: 100px;
+
+}
+
+#search {
+
+  @include shift(2.7);
+  margin-top: 30px;
+
+  text {
+    height: 20px;
+  }
 }
 
 nav {
@@ -28,11 +52,29 @@ nav {
 ul {
   @include span-columns (7);
   float: left;
+
 }
 
-ul li {
-  @include span-columns (3.3);
-  height: 200px;
+li {
+  @include span-columns (3.58);
+  height: 300px;
   background-color: blue;
   margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h1 {
+  text-align: left;
+  overflow: hidden;
+  font-size: 10px;
+  white-space: nowrap;
+  height: 10px;
+  max-width: 230px;
+}
+
+li img {
+  height: 180px;
+  width: 220px;
 }
