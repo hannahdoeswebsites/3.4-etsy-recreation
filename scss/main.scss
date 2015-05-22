@@ -5,7 +5,7 @@
 body {
   @include outer-container(1600px);
   @include span-columns (12);
-  background-color: yellow;
+  background-color: rgba(245, 245, 241, 1);
 
 }
 
@@ -45,24 +45,60 @@ nav {
   @include span-columns (2);
   @include shift(2);
   float: left;
-  background-color: white;
+  max-width: 200px;
+  min-width:230px;
 
+
+}
+
+h3 {
+  margin-bottom: 7px;
+  margin-top: 0px;
+  padding-top: 3px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+#categorieslist {
+
+  font-size: 12px;
+  list-style-type: none;
+  padding-left: 20px;
+  min-width: 170px;
+  line-height:25px;
+
+}
+
+ #categories {
+   height: 400px;
+   margin-bottom: 30px;
+   background-color: white;
+   margin-top: 10px;
+ }
+
+#refine {
+  height: 500px;
+  margin-top: 10px;
+  background-color: white;
 }
 
 ul {
   @include span-columns (7);
-  float: left;
+
 
 }
 
-li {
+#items {
   @include span-columns (3.58);
-  height: 300px;
+  height: 220px;
   background-color: blue;
   margin-bottom: 10px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   text-overflow: ellipsis;
+  min-width: 220px;
 }
 
 h1 {

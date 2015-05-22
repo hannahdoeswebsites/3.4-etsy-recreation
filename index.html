@@ -17,14 +17,41 @@
   </header>
 
   <nav>
-    navigation bars go here
+    <p>Show Results For:</p>
+    <div id="categories"><h3>All Categories</h3>
+      <ul id ="categorieslist">
+        <li>Home &amp; Living</li>
+        <li>Jewelry</li>
+        <li>Art &amp; Collectibles</li>
+        <li>Craft Supplies &amp; Tools</li>
+        <li>Books, Movies &amp; Music</li>
+        <li>Toys &amp; Games</li>
+        <li>Accessories</li>
+        <li>Paper &amp; Party Supplies</li>
+        <li>Bath &amp; Beauty</li>
+        <li>Clothing</li>
+        <li>Bags &amp; Purses</li>
+        <li>Shoes</li>
+      </ul>
+    </div>
+    <p>Refine Your Search</p>
+    <div id="refine"><h3>Item Type</h3>
+      <h3>Price</h3>
+      <h3>Filter by Color</h3>
+      <h3>Shop Location</h3>
+      <h3>Ship To</h3>
+       Refine your search</div>
+
+
   </nav>
+
+
 
   <ul class="itemsForSale">
 
 
  <script id="itemsForSale-Template" type="text/x-handlebars-template">
-   <li>
+   <li id="items">
      <img src="{{productImage}}">
      <h1>{{checkTitle title}}</h1>
      <span class="shopname">{{Shop.shop_name}}</span>
