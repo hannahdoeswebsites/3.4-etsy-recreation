@@ -19,6 +19,11 @@
             Handlebars.registerHelper('productImage', function(){
                 return this.Images[0].url_170x135;
             } );
+
+            Handlebars.registerHelper('shopLink', function(){
+                return this.url;
+            } );
+
             Handlebars.registerHelper('checkTitle', function(string){
                 //console.log(string);
                 if(string.length > 30){

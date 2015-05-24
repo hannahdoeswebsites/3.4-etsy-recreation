@@ -10,10 +10,9 @@
 
   <header>
     <div id="headerimage"></div>
-    <form id="search">
-        <input type="text" placeholder="Search..." required>
-        <input type="button" value="Search">
-</form>
+    <div id="search">
+        <input type="text" class="text" placeholder="Search..." required></div><input type="button" class="button" value="Search">
+</div>
   </header>
 
   <nav>
@@ -52,10 +51,10 @@
 
  <script id="itemsForSale-Template" type="text/x-handlebars-template">
    <li id="items">
-     <img src="{{productImage}}">
-     <h1>{{checkTitle title}}</h1>
+     <a href="{{shopLink}}"><img src="{{productImage}}"></a>
+     <a href="{{shopLink}}"><h1>{{checkTitle title}}</h1></a>
      <span class="shopname">{{Shop.shop_name}}</span>
-     <span class-"price">${{price}} USD</span>
+     <span class="price">${{price}} USD</span>
 
    </li>
  </ul>
