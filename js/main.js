@@ -24,6 +24,10 @@
                 return this.url;
             } );
 
+            Handlebars.registerHelper('ownerLink', function(){
+                return this.Shop.url;
+            } );
+
             Handlebars.registerHelper('checkTitle', function(string){
                 //console.log(string);
                 if(string.length > 30){
